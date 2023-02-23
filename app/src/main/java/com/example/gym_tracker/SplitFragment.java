@@ -1,5 +1,6 @@
 package com.example.gym_tracker;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 
@@ -27,7 +28,7 @@ public class SplitFragment extends Fragment {
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(), "test", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getActivity(), AddSplitActivity.class));
             }
         });
 
